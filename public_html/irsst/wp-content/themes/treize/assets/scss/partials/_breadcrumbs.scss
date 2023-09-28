@@ -1,0 +1,110 @@
+.breadcrumbs {
+    margin-bottom: 48px;
+    color: $color-white;
+    font-size: 1.6rem;
+
+    &--mobile {
+        display: none;
+        color: $color-white;
+        text-decoration: none;
+        align-items: center;
+
+        .arrow--small {
+            position: relative;
+            top: -2px;
+            margin-right: 16px;
+            transform: scale(0.95);
+
+            svg {
+                transform: rotate(135deg);
+            }
+        }
+
+        svg,
+        g,
+        path {
+            stroke: $color-white;
+        }
+    }
+
+    &__list {
+        display: flex;
+        min-width: 0;
+    }
+
+    &__item {
+        margin-right: 48px;
+        position: relative;
+
+        br {
+            display: none;
+            content: none;
+        }
+
+        &:hover {
+            .ellipsis {
+                opacity: 0;
+            }
+
+            .ellipsis-text {
+                max-width: 250px;
+            }
+        }
+
+        &:after {
+            content: "/";
+            position: absolute;
+            right: -32px;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            color: $color-subtitle;
+        }
+
+        &:last-of-type {
+            margin-right: 0;
+
+            &:after {
+                content: none;
+            }
+        }
+    }
+
+    &__link {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: $color-white;
+
+        path {
+            stroke: $color-white;
+        }
+    }
+}
+
+.theme-impacts,
+.theme-process {
+    .breadcrumbs__link {
+        &:hover {
+            color: $color-white;
+            opacity: 80%;
+
+            svg,
+            path {
+                transition: 0.3s;
+                stroke: $color-white;
+                opacity: 80%;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .breadcrumbs--desktop {
+        display: none;
+    }
+
+    .breadcrumbs--mobile {
+        display: flex;
+    }
+}

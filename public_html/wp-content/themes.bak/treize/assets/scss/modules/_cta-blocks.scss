@@ -1,0 +1,245 @@
+.cta-blocks {
+    &__container {
+        margin-top: 65px;
+    }
+}
+
+.cta-block {
+    height: auto;
+    margin-bottom: 30px;
+
+    &__container {
+        min-height: 440px;
+        padding: 70px 195px 75px 56px;
+        height: 100%;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        width: 100%;
+
+        .cta--main {
+            margin-top: 24px;
+        }
+    }
+
+    &.theme-process .cta-block__container:hover {
+        background-color: $color-process !important;
+    }
+
+    &.theme-impacts .cta-block__container:hover {
+        background-color: $color-impacts !important;
+    }
+
+    &.theme-neutral .cta-block__container:hover {
+        background-color: $color-title !important;
+    }
+}
+
+.full-width-mode {
+    .cta-blocks {
+        &__container {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        &__description {
+            display: none;
+        }
+    }
+
+    .cta-block {
+        padding-left: 0;
+        padding-right: 0;
+
+        h4 {
+            @extend .looks-h2;
+            color: $color-white;
+        }
+
+        &:nth-child(odd) a {
+            background-color: $color-title;
+        }
+    }
+}
+
+.full-width-mode .theme-impacts.cta-block {
+    &:nth-child(odd) a {
+        &:hover {
+            background-color: $color-impacts;
+        }
+    }
+}
+
+.full-width-mode .theme-process.cta-block {
+    &:nth-child(odd) a {
+        &:hover {
+            background-color: $color-process;
+        }
+    }
+}
+
+.wrapper.three-cards {
+    .cta-block {
+        @extend .col-xxl-4;
+
+        &__container {
+            padding: 64px 56px 76px 56px;
+        }
+    }
+}
+
+.theme-impacts {
+    .cta-block__container {
+        &:hover {
+            background-color: $color-impacts;
+        }
+    }
+}
+
+.theme-process {
+    .cta-block__container {
+        &:hover {
+            background-color: $color-process;
+        }
+    }
+}
+
+.theme-impacts,
+.theme-process,
+.theme-neutral {
+    .cta-blocks {
+        &__container .cta--main {
+            &:hover {
+                .last-word {
+                    &:after {
+                        content: url(../svg/ext-arrow-white.svg);
+                    }
+                }
+            }
+        }
+    }
+
+    .cta-block {
+        &__container {
+            text-decoration: none;
+
+            .cta--main {
+                color: white;
+
+                .last-word {
+                    &:after {
+                        content: url('../svg/ext-arrow-white.svg');
+                    }
+                }
+            }
+
+            &:hover {
+                .cta--main {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+.cta-block__container {
+    min-height: 544px;
+    background-color: $color-text;
+    color: white;
+    transition: all 0.3s;
+    padding: 95px 146px;
+
+    h3,
+    h4 {
+        color: white;
+    }
+
+    .subtitle {
+        color: $color-light-gray;
+    }
+
+    &:hover {
+        .cta--main {
+            .last-word {
+                &:after {
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+.wrapper {
+    .cta-block {
+        &__container {
+            min-height: 440px;
+            padding: 70px 195px 70px 56px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    .wrapper {
+        .cta-block {
+            &__container {
+                padding: 70px 100px 75px 56px;
+            }
+        }
+    }
+
+    .full-width-mode {
+        .cta-block {
+            &__container {
+                padding: 70px 100px 75px 64px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .cta-block {
+        margin-top: $space-between-elements;
+    }
+
+    .wrapper.three-cards {
+        .cta-block {
+            flex-basis: 100%;
+            max-width: 100%;
+        }
+    }
+
+    .cta-blocks {
+        margin: 100px 0;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper {
+        .cta-block {
+            &__container {
+                padding: 70px 56px 75px 56px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+
+    .full-width-mode,
+    .wrapper {
+        .cta-block {
+            &__container {
+                padding: 70px 56px 75px 32px;
+            }
+        }
+    }
+
+    .full-width-mode {
+        .cta-block {
+            &__container {
+                min-height: 440px;
+            }
+        }
+    }
+}

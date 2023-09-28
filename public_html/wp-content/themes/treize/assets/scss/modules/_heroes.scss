@@ -1,0 +1,127 @@
+.theme-impacts .hero {
+    background: linear-gradient(180deg, $color-title 0%, darken($color-impacts, 20%) 100%);
+}
+
+.theme-process .hero {
+    background: linear-gradient(180deg, $color-title 0%, darken($color-process, 20%) 100%);
+}
+
+.home .hero--front {
+    background: white;
+    padding: 0;
+}
+
+.hero {
+    padding-left: 0;
+    padding-right: 0;
+
+    h1,
+    &__text-content {
+        color: $color-white;
+    }
+
+    &__arrow {
+        display: flex;
+        align-items: flex-end;
+
+        svg {
+            transition: transform 0.24s ease-in-out;
+        }
+
+        path,
+        svg,
+        g {
+            stroke: $color-white;
+        }
+
+        a:hover {
+            svg {
+                transform: rotate(45deg);
+            }
+        }
+    }
+
+    &__context {
+        h2 {
+            font-size: 1.7rem;
+            font-weight: medium;
+            color: $color-white;
+        }
+
+        .wysiwyg {
+            margin-top: 36px;
+            font-size: 1.9rem;
+            line-height: 1.5;
+        }
+    }
+
+    &__title {
+        margin-bottom: 142px;
+    }
+}
+
+.hero--front {
+    h1 {
+        color: $color-title;
+    }
+
+    .hero__text-content {
+        color: $color-text;
+    }
+
+    .hero__arrow {
+
+        path,
+        svg,
+        g {
+            stroke: $color-text;
+        }
+    }
+
+    .wysiwyg {
+        font-size: 3rem;
+
+        li,
+        p {
+            font-size: 3rem;
+        }
+
+        ul {
+            padding-left: 0;
+
+            li {
+                margin-bottom: 0;
+                list-style-type: none;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-lg) {
+    .hero--front {
+        .row {
+            margin-bottom: 72px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        [class*="col"]:not(.hidden-lg) + [class*="col"] {
+            margin-top: 48px;
+        }
+
+        .wysiwyg {
+            font-size: 2.4rem;
+
+            li,
+            p {
+                font-size: 2.4rem;
+            }
+        }
+
+        .hero__text-content--title {
+            margin-bottom: $space-between-section-1024;
+        }
+    }
+}

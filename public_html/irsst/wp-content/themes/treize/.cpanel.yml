@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/treircyx/public_html/irssttt
+    - /bin/cp -a * $DEPLOYPATH

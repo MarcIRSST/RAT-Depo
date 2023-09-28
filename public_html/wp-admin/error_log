@@ -1,0 +1,562 @@
+[10-Nov-2021 12:41:10 UTC] Erreur de la base de données WordPress Illegal mix of collations (utf8mb4_unicode_520_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' pour la requête UPDATE
+					treircyx_blc_synch AS synch
+					JOIN treircyx_posts AS posts ON (synch.container_id = posts.ID and synch.container_type=posts.post_type)
+				  SET
+					synched = 0
+				  WHERE
+					synch.last_synch < posts.post_modified faite par activate_plugin, plugin_sandbox_scrape, include_once('/plugins/broken-link-checker/broken-link-checker.php'), require('/plugins/broken-link-checker/core/init.php'), require('/plugins/broken-link-checker/includes/activation.php'), blcModuleManager->plugin_activated, blcModule->plugin_activated, blcContainerManager->activated, blcAnyPostContainerManager->resynch, blcPostTypeOverlord->resynch
+[10-Nov-2021 12:41:10 UTC] Erreur de la base de données WordPress Illegal mix of collations (utf8mb4_unicode_520_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' pour la requête INSERT INTO treircyx_blc_synch(container_id, container_type, synched)
+				  SELECT posts.id, posts.post_type, 0
+				  FROM
+				    treircyx_posts AS posts LEFT JOIN treircyx_blc_synch AS synch
+					ON (synch.container_id = posts.ID and synch.container_type=posts.post_type)
+				  WHERE
+				  	posts.post_status IN ('publish')
+	 				AND posts.post_type IN ('post', 'page')
+					AND synch.container_id IS NULL faite par activate_plugin, plugin_sandbox_scrape, include_once('/plugins/broken-link-checker/broken-link-checker.php'), require('/plugins/broken-link-checker/core/init.php'), require('/plugins/broken-link-checker/includes/activation.php'), blcModuleManager->plugin_activated, blcModule->plugin_activated, blcContainerManager->activated, blcAnyPostContainerManager->resynch, blcPostTypeOverlord->resynch
+[10-Nov-2021 12:42:40 UTC] Erreur de la base de données WordPress Illegal mix of collations (utf8mb4_unicode_520_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' pour la requête UPDATE
+					treircyx_blc_synch AS synch
+					JOIN treircyx_posts AS posts ON (synch.container_id = posts.ID and synch.container_type=posts.post_type)
+				  SET
+					synched = 0
+				  WHERE
+					synch.last_synch < posts.post_modified faite par require_once('wp-admin/admin.php'), do_action('settings_page_link-checker-settings'), WP_Hook->do_action, WP_Hook->apply_filters, wsBrokenLinkChecker->options_page, blcModuleManager->set_active_modules, blcModuleManager->activate, blcContainerManager->activated, blcAnyPostContainerManager->resynch, blcPostTypeOverlord->resynch
+[10-Nov-2021 12:42:40 UTC] Erreur de la base de données WordPress Illegal mix of collations (utf8mb4_unicode_520_ci,IMPLICIT) and (utf8mb4_unicode_ci,IMPLICIT) for operation '=' pour la requête INSERT INTO treircyx_blc_synch(container_id, container_type, synched)
+				  SELECT posts.id, posts.post_type, 0
+				  FROM
+				    treircyx_posts AS posts LEFT JOIN treircyx_blc_synch AS synch
+					ON (synch.container_id = posts.ID and synch.container_type=posts.post_type)
+				  WHERE
+				  	posts.post_status IN ('publish')
+	 				AND posts.post_type IN ('post', 'page', 'bibliographies')
+					AND synch.container_id IS NULL faite par require_once('wp-admin/admin.php'), do_action('settings_page_link-checker-settings'), WP_Hook->do_action, WP_Hook->apply_filters, wsBrokenLinkChecker->options_page, blcModuleManager->set_active_modules, blcModuleManager->activate, blcContainerManager->activated, blcAnyPostContainerManager->resynch, blcPostTypeOverlord->resynch
+[27-Jan-2023 19:33:01 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2662) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[31-Mar-2023 13:01:12 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2663) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[31-Mar-2023 13:15:50 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2664) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[31-Mar-2023 16:05:32 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2665) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[04-Apr-2023 19:12:54 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2666) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 14:11:44 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2667) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 14:13:38 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2668) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 14:58:52 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2669) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 14:58:52 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (25) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 15:03:43 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2670) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 15:03:43 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (27) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 15:29:05 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2672) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 15:29:05 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (25) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:01:28 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2673) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:01:28 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (47) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:28:06 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2674) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:28:06 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (354) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:30:57 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2675) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:30:57 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (49) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:32:02 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (49) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:33:10 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2676) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:33:10 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (51) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:38:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2677) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:38:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (354) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:48:49 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2678) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 17:48:49 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (354) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 19:16:05 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (850) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 19:17:26 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (850) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 19:19:40 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (850) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 19:25:37 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (853) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 19:26:46 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (853) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 20:24:56 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2679) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 20:24:56 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (354) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 20:41:00 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2680) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[14-Apr-2023 20:41:00 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (795) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[17-Apr-2023 17:15:15 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (850) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[17-Apr-2023 17:20:45 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (853) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[01-May-2023 14:40:37 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2681) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[01-May-2023 15:13:00 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2686) AND tt.taxonomy IN () made by do_action('wp_ajax_customize_save'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Customize_Manager->save, WP_Customize_Manager->save_changeset_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[01-May-2023 15:13:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2686) AND tt.taxonomy IN () made by do_action('wp_ajax_customize_save'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Customize_Manager->save, WP_Customize_Manager->save_changeset_post, wp_update_post, wp_insert_post, wp_transition_post_status, do_action('transition_post_status'), WP_Hook->do_action, WP_Hook->apply_filters, _wp_customize_publish_changeset, WP_Customize_Manager->trash_changeset_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[01-May-2023 15:13:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2686) AND tt.taxonomy IN () made by do_action('wp_ajax_customize_save'), WP_Hook->do_action, WP_Hook->apply_filters, WP_Customize_Manager->save, WP_Customize_Manager->save_changeset_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[01-May-2023 15:28:04 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2687) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 17:57:35 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2690) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:00:26 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2691) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:00:26 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (205) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:31:17 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (167) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:34:19 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1549) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:38:27 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (57) AND tt.taxonomy IN () made by wp_trash_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:39:23 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (63) AND tt.taxonomy IN () made by wp_trash_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:39:23 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (61) AND tt.taxonomy IN () made by wp_trash_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:39:23 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (59) AND tt.taxonomy IN () made by wp_trash_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:48:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2693) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:48:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (195) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:51:38 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2694) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 18:51:38 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (195) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 19:00:01 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2695) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 19:00:01 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (195) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 19:01:37 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2696) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[07-Jul-2023 19:01:37 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (195) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 13:04:18 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (883) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 13:12:26 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2697) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 13:12:26 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (209) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 14:08:51 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2698) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 14:50:27 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2699) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 14:50:27 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (173) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 14:52:31 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2700) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 14:52:31 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (183) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:23:42 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2701) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:23:42 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (169) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:27:02 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2702) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:27:02 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (169) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:30:13 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2703) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:30:13 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (169) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:30:21 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (169) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:32:37 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (65) AND tt.taxonomy IN () made by wp_trash_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:35:40 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2704) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:35:40 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (826) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 15:51:29 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1474) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 16:16:20 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2705) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 16:16:20 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (826) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 16:28:49 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1567) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 16:29:48 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1567) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 16:32:42 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1567) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 16:47:32 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1567) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 16:49:05 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1569) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 16:58:05 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1582) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 16:59:07 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1584) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 16:59:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1584) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 17:00:05 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1586) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 18:44:48 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1567) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 18:47:22 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (1584) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 18:52:55 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2706) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 18:52:55 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (191) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 18:57:23 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2707) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 18:57:23 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (14) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 19:02:14 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2708) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[10-Jul-2023 19:02:14 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (14) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[11-Jul-2023 12:40:46 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2709) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[11-Jul-2023 12:40:46 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (795) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[11-Jul-2023 15:26:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2710) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[11-Jul-2023 15:26:24 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (191) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[11-Jul-2023 15:47:34 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2711) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('post_updated'), WP_Hook->do_action, WP_Hook->apply_filters, wp_save_post_revision, _wp_put_post_revision, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[11-Jul-2023 15:47:34 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (215) AND tt.taxonomy IN () made by edit_post, wp_update_post, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[28-Jul-2023 15:08:10 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2712) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[23-Aug-2023 21:16:11 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2713) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms
+[25-Sep-2023 11:52:46 UTC] WordPress database error You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ')' at line 5 for query SELECT DISTINCT tt.taxonomy
+						 FROM treircyx_term_taxonomy tt
+						 JOIN treircyx_term_relationships tr
+						  ON tt.term_taxonomy_id = tr.term_taxonomy_id
+						 WHERE tr.object_id IN (2714) AND tt.taxonomy IN () made by wp_dashboard, do_meta_boxes, wp_dashboard_quick_press, get_default_post_to_edit, wp_insert_post, do_action('save_post'), WP_Hook->do_action, WP_Hook->apply_filters, display_tax_sync_message, do_action('wpml_new_duplicated_terms'), WP_Hook->do_action, WP_Hook->apply_filters, new_duplicated_terms_filter, WPML_Term_Hierarchy_Duplication->duplicates_require_sync, WPML_Term_Hierarchy_Duplication->get_need_sync_all_terms

@@ -1,0 +1,243 @@
+//
+// -- Start editing -- //
+//
+// Set the number of columns you want to use on your layout.
+$grid-columns: 12;
+// Set the gutter between columns.
+$gutter-width: 30px;
+// Set a margin for the container sides.
+$outer-margin: 30px;
+// Create or remove breakpoints for your project
+// Syntax:
+// name SIZErem,
+$breakpoints: xlg 90rem,
+xl 1280px,
+lg 64rem,
+md 50rem,
+sm 40rem,
+xs 25rem;
+//xs: 400
+//sm: 640
+//md: 800
+//lg: 1024
+//xlg: 1440px
+//xxl: Default
+//
+// -- Stop editing -- //
+//
+$gutter-compensation: ($gutter-width * 0.5) * -1;
+$wrapper-width: 1568px;
+$smaller-wrapper-width: 1128px;
+
+.wrapper {
+    margin: 0 auto;
+    max-width: $wrapper-width;
+    width: 100%;
+    padding: 0 64px;
+}
+
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: $outer-margin;
+    padding-left: $outer-margin;
+}
+
+.row {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: $gutter-compensation;
+    margin-left: $gutter-compensation;
+    margin-bottom: 100px;
+}
+
+.row:last-child {
+    margin-bottom: 0;
+}
+
+.row.reverse {
+    flex-direction: row-reverse;
+}
+
+.col {
+    flex-direction: column;
+}
+
+.col.reverse {
+    flex-direction: column-reverse;
+}
+
+$name: xxl;
+
+[class*='col-#{$name}'] {
+    flex: 0 0 auto;
+    padding-right: $gutter-compensation * -1;
+    padding-left: $gutter-compensation * -1;
+    box-sizing: border-box;
+}
+
+@for $i from 1 through $grid-columns {
+    .col-#{$name}-#{$i} {
+        flex-basis: math.div(100%, $grid-columns) * $i;
+        max-width: math.div(100%, $grid-columns) * $i;
+    }
+}
+
+@for $i from 0 through $grid-columns {
+    .col-#{$name}-offset-#{$i} {
+        margin-left: math.div(100%, $grid-columns) * $i;
+    }
+}
+
+.col-#{$name} {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 100%;
+}
+
+.start-#{$name} {
+    justify-content: flex-start;
+    text-align: start;
+}
+
+.center-#{$name} {
+    justify-content: center;
+    text-align: center;
+}
+
+.end-#{$name} {
+    justify-content: flex-end;
+    text-align: end;
+}
+
+.top-#{$name} {
+    align-items: flex-start;
+}
+
+.middle-#{$name} {
+    align-items: center;
+}
+
+.bottom-#{$name} {
+    align-items: flex-end;
+}
+
+.around-#{$name} {
+    justify-content: space-around;
+}
+
+.between-#{$name} {
+    justify-content: space-between;
+}
+
+.first-#{$name} {
+    order: -1;
+}
+
+.last-#{$name} {
+    order: 1;
+}
+
+@each $breakpoint in $breakpoints {
+    $name: nth($breakpoint, 1);
+    $size: nth($breakpoint, 2);
+
+    @media only screen and (max-width: $size) {
+        [class*='col-#{$name}'] {
+            box-sizing: border-box;
+            flex: 0 0 auto;
+            padding-right: $gutter-compensation * -1;
+            padding-left: $gutter-compensation * -1;
+        }
+
+        @for $i from 1 through $grid-columns {
+            .col-#{$name}-#{$i} {
+                flex-basis: math.div(100%, $grid-columns) * $i;
+                max-width: math.div(100%, $grid-columns) * $i;
+            }
+        }
+
+        @for $i from 0 through $grid-columns {
+            .col-#{$name}-offset-#{$i} {
+                margin-left: math.div(100%, $grid-columns) * $i;
+            }
+        }
+
+        .col-#{$name} {
+            flex-grow: 1;
+            flex-basis: 0;
+            max-width: 100%;
+        }
+
+        .start-#{$name} {
+            justify-content: flex-start;
+            text-align: start;
+        }
+
+        .hidden-#{$name} {
+            display: none !important;
+        }
+
+        .center-#{$name} {
+            justify-content: center;
+            text-align: center;
+        }
+
+        .end-#{$name} {
+            justify-content: flex-end;
+            text-align: end;
+        }
+
+        .top-#{$name} {
+            align-items: flex-start;
+        }
+
+        .middle-#{$name} {
+            align-items: center;
+        }
+
+        .bottom-#{$name} {
+            align-items: flex-end;
+        }
+
+        .around-#{$name} {
+            justify-content: space-around;
+        }
+
+        .between-#{$name} {
+            justify-content: space-between;
+        }
+
+        .first-#{$name} {
+            order: -1;
+        }
+
+        .last-#{$name} {
+            order: 1;
+        }
+    }
+}
+
+@media screen and (max-width: $screen-lg) {
+    .wrapper {
+        padding: 0 48px;
+    }
+
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+
+        .row {
+            margin-left: -15px;
+            margin-right: -15px;
+        }
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+    .wrapper {
+        padding: 0 20px;
+    }
+}

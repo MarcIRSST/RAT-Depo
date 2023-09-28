@@ -1,0 +1,27 @@
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-01-24 16:08:44] require_once(): Failed opening required '/home/retourautravail/public_html/irsst/wp-admin/includes/media.php' (include_path='.:/opt/alt/php74/usr/share/pear') - File: /home/retourautravail/public_html/irsst/wp-admin/includes/admin.php Line: 37 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_COMPILE_ERROR][2023-01-24 16:08:44] require_once(): Failed opening required '/home/retourautravail/public_html/irsst/wp-admin/includes/admin-filters.php' (include_path='.:/opt/alt/php74/usr/share/pear') - File: /home/retourautravail/public_html/irsst/wp-admin/includes/admin.php Line: 22 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-01-24 16:08:46] Uncaught Error: Class 'OTGS_Products_Config_Xml' not found in /home/retourautravail/public_html/irsst/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/class-wp-installer.php:268
+Stack trace:
+#0 /home/retourautravail/public_html/irsst/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/class-wp-installer.php(93): WP_Installer->prepare_products_config_xml()
+#1 /home/retourautravail/public_html/irsst/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/class-wp-installer.php(73): WP_Installer->__construct()
+#2 /home/retourautravail/public_html/irsst/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/functions-core.php(6): WP_Installer::instance()
+#3 /home/retourautravail/public_html/irsst/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/installer.php(15): WP_Installer()
+#4 /home/retourautravail/public_html/irsst/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/loader.php(22 - File: /home/retourautravail/public_html/irsst/wp-content/plugins/sitepress-multilingual-cms/vendor/otgs/installer/includes/class-wp-installer.php Line: 268 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-01-24 16:08:54] Uncaught Error: Call to undefined function acf_load_textdomain() in /home/retourautravail/public_html/irsst/wp-content/plugins/advanced-custom-fields-pro/acf.php:246
+Stack trace:
+#0 /home/retourautravail/public_html/irsst/wp-includes/class-wp-hook.php(308): ACF->init('')
+#1 /home/retourautravail/public_html/irsst/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, Array)
+#2 /home/retourautravail/public_html/irsst/wp-includes/plugin.php(517): WP_Hook->do_action(Array)
+#3 /home/retourautravail/public_html/irsst/wp-settings.php(617): do_action('init')
+#4 /home/retourautravail/public_html/irsst/wp-config.php(112): require_once('/home/retouraut...')
+#5 /home/retourautravail/public_html/irsst/wp-load.php(50): require_once('/home/retouraut...')
+#6 /home/retourautravail/public_html/irsst/wp-cron.php(46): require_once('/home/retouraut...')
+#7 {main}
+  thrown - File: /home/retourautravail/public_html/irsst/wp-content/plugins/advanced-custom-fields-pro/acf.php Line: 246 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No
+[WP STAGING Shutdown Function][E_ERROR][2023-01-24 16:55:49] Uncaught TypeError: Argument 1 passed to WPSEO_Options::register_option() must be an instance of WPSEO_Option, null given, called in /home/retourautravail/public_html/irsst/wp-content/plugins/wordpress-seo/inc/options/class-wpseo-options.php on line 63 and defined in /home/retourautravail/public_html/irsst/wp-content/plugins/wordpress-seo/inc/options/class-wpseo-options.php:95
+Stack trace:
+#0 /home/retourautravail/public_html/irsst/wp-content/plugins/wordpress-seo/inc/options/class-wpseo-options.php(63): WPSEO_Options::register_option(NULL)
+#1 /home/retourautravail/public_html/irsst/wp-content/plugins/wordpress-seo/inc/options/class-wpseo-options.php(84): WPSEO_Options->__construct()
+#2 /home/retourautravail/public_html/irsst/wp-content/plugins/wordpress-seo/wp-seo-main.php(323): WPSEO_Options::get_instance()
+#3 /home/retourautravail/public_html/irsst/wp-includes/class-wp-hook.php(308): wpseo_init('')
+#4 /home/retourautravail/public_html/irsst/wp-includes/class-wp-hook.php(332): WP_Hook->apply_filters(NULL, A - File: /home/retourautravail/public_html/irsst/wp-content/plugins/wordpress-seo/inc/options/class-wpseo-options.php Line: 95 | Is it Fatal Error? Yes | Is it Thrown by WP STAGING? No

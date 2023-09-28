@@ -1,0 +1,128 @@
+{
+    "key": "group_60afa3f6c5fb3",
+    "title": "Reusable - Ancres",
+    "fields": [
+        {
+            "key": "field_60afa6406427d",
+            "label": "Ancre du module",
+            "name": "anchor_group",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_60dc740194d9d",
+                    "label": "Ancre principale",
+                    "name": "anchor_main",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "Cocher oui pour imbriquer les ancres suivantes sous celle-ci",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "15",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "Oui",
+                    "ui_off_text": "Non",
+                    "ui": 1
+                },
+                {
+                    "key": "field_60db43d0aec00",
+                    "label": "Numéro de l'ancre",
+                    "name": "anchor_number",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Numéro apparaissant à quelques endroits",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "20",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_60afa65d6427e",
+                    "label": "Libellé de l'ancre",
+                    "name": "anchor_label",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Ceci n'est pas toujours utilisé mais c'est une bonne pratique d'en mettre un tout de même.",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "32",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": ""
+                },
+                {
+                    "key": "field_60afa6706427f",
+                    "label": "Identification de l'ancre",
+                    "name": "anchor_id",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "Tout en minuscule, aucun caractère spéciaux, aucune espace (utilisé les tirets à la place)",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "32",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "#",
+                    "append": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "post"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": false,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1674596602
+}

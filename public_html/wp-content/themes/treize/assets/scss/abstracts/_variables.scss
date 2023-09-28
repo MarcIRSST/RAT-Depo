@@ -1,0 +1,40 @@
+//FONTS
+$main-font: 'neue-haas-grotesk-display',
+'helvetica',
+'arial',
+sans-serif;
+//RESPOSIVE
+$screen-xlg: 1440px;
+$screen-xl: 1280px;
+$screen-lg: 1024px;
+$screen-md: 800px;
+$screen-sm: 640px;
+$screen_xs: 400px;
+//COLORS
+$color-primary: #DC481E;
+$color-impacts: #DC481E;
+$color-process: #3462E0;
+$color-title: #121212;
+$color-text: #303030;
+$color-subtitle: #868683;
+$color-gray: #c5c5c3;
+$color-light-gray: #f8f8f8;
+$color-dot: #606060;
+$color-white: #ffffff;
+$color-border: #605F5D;
+$color-text-lighter: #424242;
+//Sections
+$color-background-grey: #F8F8F8;
+$color-impacts-gradient: linear-gradient(180deg, rgba($color-title, 0.45) 0%, rgba($color-impacts, 0.45) 100%);
+$color-process-gradient: linear-gradient(180deg, rgba($color-title, 0.45) 0%, rgba($color-process, 0.45) 100%);
+//SPACING
+$space-between-elements: 40px;
+$space-between-elements-smaller: 24px;
+$space-between-elements-640: 16px;
+$space-between-section: 200px;
+$space-between-section-1024: 100px;
+$space-between-section-640: 88px;
+$space-between-subsections: 72px;
+$space-between-modules: 57px;
+$space-between-modules-1024: 80px;
+$space-between-modules-640: 40px;

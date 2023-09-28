@@ -1,0 +1,37 @@
+.content-with-cta {
+    .cta-block {
+        @extend .col-xxl-12;
+    }
+
+    .wysiwyg {
+        h2 {
+            margin-bottom: 52px;
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+    &__ctas {
+        margin-top: 45px;
+
+        .theme-process .cta-block__container:hover {
+            background-color: $color-process;
+        }
+
+        .theme-impacts .cta-block__container:hover {
+            background-color: $color-impacts;
+        }
+
+        .theme-neutral .cta-block__container:hover {
+            background-color: $color-title;
+        }
+    }
+
+    .cta-block + .cta-block {
+        margin-top: 24px;
+    }
+
+    .cta-block {
+        margin-bottom: 0;
+    }
+}

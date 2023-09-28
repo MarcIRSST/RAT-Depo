@@ -1,0 +1,138 @@
+.blog,
+.page-template-template-support,
+.page-template-template-purpose,
+.post-type-archive {
+    .search-form {
+        &__input {
+            input {
+                border-bottom-color: $color-white;
+                color: $color-white;
+
+                &::placeholder {
+                    color: rgba($color-white, 0.5)
+                }
+            }
+        }
+
+        &__icon {
+            svg {
+                .bsi {
+                    stroke: $color-white;
+                }
+            }
+        }
+    }
+}
+
+input[type="search"]::-webkit-search-cancel-button {
+    display: none;
+}
+
+.search-form {
+    width: 100%;
+    position: relative;
+
+    &__input {
+        width: 100%;
+        display: block;
+
+        input {
+            width: 100%;
+            padding: 24px 100px 24px 0;
+            border: 0;
+            border-radius: 0;
+            appearance: none;
+            -webkit-appearance: none;
+            background: transparent;
+            font-size: 6.4rem;
+            border-bottom: 2px solid $color-title;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__button {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 100px;
+        border: 0;
+        cursor: pointer;
+        background: transparent;
+        text-align: right;
+    }
+
+    &__icon {
+        display: inline-block;
+        width: 52px;
+    }
+}
+
+@media screen and (max-width: $screen-lg) {
+    .search-form {
+        &__input {
+            input {
+                font-size: 4.8rem
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-md) {
+    .search-form {
+        &__input {
+            input {
+                font-size: 2.4rem;
+                padding-right: 60px;
+            }
+        }
+
+        &__button {
+            width: 60px;
+        }
+
+        &__icon {
+            position: relative;
+            left: 8px;
+            transform: scale(0.6);
+        }
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+    .search-form {
+        &__input {
+            input {
+                font-size: 2.4rem;
+                padding-right: 15px;
+                padding-left: 15px;
+            }
+        }
+
+        &__button {
+            position: static;
+            text-align: center;
+            float: right;
+            display: flex;
+            width: auto;
+            align-items: center;
+            margin-top: 24px;
+        }
+
+        &__icon {
+            position: static;
+        }
+    }
+
+    body:not(.page-template-default) {
+        .search-form {
+            &__button {
+                color: $color-white;
+            }
+        }
+    }
+}

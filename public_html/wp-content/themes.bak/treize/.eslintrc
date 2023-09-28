@@ -1,0 +1,32 @@
+{
+    "extends": ["standard"],
+    "rules": {
+        "indent": ["error", 4],
+        "semi": ["error", "always"],
+        "padding-line-between-statements": [
+            "error",
+            {
+                "blankLine": "always",
+                "prev": "*",
+                "next": [
+                    "block",
+                    "block-like"
+                ]
+            },
+            {
+                "blankLine": "always",
+                "prev": [
+                    "function",
+                    "block",
+                    "block-like"
+                ],
+                "next": "*"
+            }
+        ]
+    },
+    "globals": {
+        "jQuery": true,
+        "$": true,
+        "gsap": true
+    }
+}

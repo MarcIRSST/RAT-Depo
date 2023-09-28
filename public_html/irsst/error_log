@@ -1,0 +1,2 @@
+[12-Dec-2022 20:03:54 UTC] Erreur d’événement de replanification de tâche pour le crochet searchwp_indexer_cron. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"searchwp_cron_interval","args":[],"interval":300}
+[12-Dec-2022 20:07:30 UTC] Erreur d’événement de replanification de tâche pour le crochet searchwp_index_controller_cron. Code d’erreur : invalid_schedule. Message d’erreur : L’évènement planifié n’existe pas.. Données : {"schedule":"searchwp_cron_interval","args":[],"interval":300}

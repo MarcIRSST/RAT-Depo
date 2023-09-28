@@ -1,0 +1,22 @@
+image: php:7.2
+
+pipelines:
+    branches:
+        master:
+            - step:
+                name: Deploy to dev
+                deployment: production
+                script:
+                    - apt-get update
+                    - apt-get -qq install git-ftp
+                    - git ftp push --user $FTP_username --passwd $FTP_password ftp://treize.dev/public_html/irssttt/wp-content/themes/treize/
+            - step:
+                name: Build styles
+                script:
+                    - pipe: atlassian/ssh-run:0.3.0
+                      variables:
+                        SSH_USER: $FTP_username
+                        SERVER: 'treize.dev'
+                        PORT: '2908'
+                        MODE: 'command'
+                        COMMAND: 'cd ./public_html/irssttt/wp-content/themes/treize && npm install && npm run build-styles && npm run build-editor-styles'

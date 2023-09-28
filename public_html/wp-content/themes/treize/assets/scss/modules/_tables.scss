@@ -1,0 +1,222 @@
+$border--strong: 2px solid $color-text;
+$border--light: 1px solid $color-gray;
+
+.table {
+    .wysiwyg {
+        ul {
+            padding: 0;
+        }
+
+        p + ul {
+            margin-top: 24px;
+        }
+    }
+
+    &__title {
+        max-width: 600px;
+        margin-bottom: 32px;
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p {
+            font-size: 26px;
+        }
+    }
+
+    &__footer {
+        font-size: 1.8rem;
+        color: $color-subtitle;
+        margin-top: 48px;
+        width: 100%;
+    }
+
+    table {
+        width: 100%;
+        min-width: 900px;
+    }
+
+    &__cell.with-background,
+    tr.with-background td {
+        background-color: $color-light-gray;
+    }
+
+    th {
+        font-size: 1.5rem;
+        color: $color-subtitle;
+        text-align: left;
+        white-space: nowrap;
+        padding: 24px;
+
+        &:first-of-type {
+            padding-left: 0;
+        }
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+    }
+
+    td {
+        padding: 24px;
+        vertical-align: top;
+
+        &:first-of-type {
+            padding-left: 0;
+        }
+
+        &:last-of-type {
+            padding-right: 0;
+        }
+
+        &.single-char-cell {
+            font-size: 3.2rem;
+        }
+
+        ul {
+            padding-top: 16px;
+        }
+    }
+
+    .cell-centered {
+        text-align: center;
+    }
+
+    &--subject {
+        th {
+            border-bottom: $border--strong;
+        }
+
+        td {
+            border-bottom: $border--light;
+            font-size: 1.7rem;
+            padding: 24px;
+
+            &:first-of-type {
+                padding-left: 24px;
+            }
+        }
+
+        .subject-cell {
+            font-size: 2.4rem;
+            vertical-align: top;
+            padding: 34px 0 24px 0 !important;
+            background-color: transparent !important;
+        }
+
+        .subject-cell,
+        .subject-last-row td {
+            border-bottom: $border--strong;
+        }
+    }
+
+    &--data {
+
+        th,
+        td {
+            &:first-of-type {
+                padding-left: 24px;
+            }
+
+            &:last-of-type {
+                padding-right: 24px;
+            }
+
+            &:first-of-type {
+                width: 60%;
+            }
+        }
+
+        td {
+            font-size: 1.8rem;
+        }
+
+        .table__footer {
+            margin-left: 24px;
+        }
+    }
+
+    &--content {
+        td {
+            border-top: $border--strong;
+            vertical-align: top;
+            font-size: 1.9rem;
+            padding-bottom: 48px;
+
+            &:first-of-type {
+                width: 33%;
+            }
+        }
+
+        tr:last-of-type {
+            border-bottom: $border--strong;
+        }
+    }
+
+    &--horizontal {
+        .table {
+            &__header {
+                font-size: 2.4rem;
+                border-top: $border--strong;
+                padding: 24px 0 32px 0;
+            }
+
+            &__cell {
+                font-size: 1.8rem;
+                border-top: $border--light;
+                padding: 26px 16px 22px 16px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-md) {
+    .table {
+        &__main {
+            display: flex;
+            margin: 0 -32px;
+            overflow-x: scroll;
+
+            table {
+                margin: 0 32px;
+            }
+        }
+
+        &--subject {
+            .subject-cell {
+                width: 33%;
+            }
+        }
+
+        &--horizontal {
+            .table {
+                &__main {
+                    margin: 0;
+
+                    table {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+
+    table,
+    table.table--content {
+        .wysiwyg {
+            td {
+                font-size: 17px;
+            }
+
+            td:first-of-type {
+                font-size: 20px;
+            }
+        }
+    }
+}

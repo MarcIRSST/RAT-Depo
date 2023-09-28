@@ -1,0 +1,228 @@
+.theme-impacts footer,
+.theme-process footer,
+footer {
+    padding: 120px 0 77px 0;
+    background-color: $color-title;
+    color: white;
+
+    .footer-logo {
+        max-width: 150px;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+        max-width: 105px;
+        text-align: right;
+    }
+
+    .footer-content {
+        & > div {
+            padding-right: 100px;
+
+            &:first-child {
+                margin-top: 86px;
+            }
+        }
+    }
+
+    .menu li {
+        a {
+            @extend .cta--external;
+            color: white;
+            text-decoration: none;
+            line-height: 1.333;
+
+            &:hover {
+                color: white;
+
+                .last-word {
+                    &:after {
+                        content: url('../svg/ext-arrow-white.svg');
+                    }
+                }
+            }
+
+            .last-word {
+                &:after {
+                    content: url('../svg/ext-arrow-white.svg');
+                    transform: rotate(90deg);
+                    right: -3px;
+                    top: 8px;
+                    transition: 0.24s transform;
+                }
+            }
+        }
+
+        & > a {
+            &:hover {
+                .last-word {
+                    &:after {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        align-items: center;
+        position: relative;
+
+        .credits {
+            display: flex;
+            font-size: 1.4rem;
+            align-items: center;
+            flex-direction: row;
+
+            .logo-container {
+                margin-right: $space-between-elements-640;
+            }
+        }
+
+        .treize-link-container {
+            font-size: 1.4rem;
+            height: 100%;
+            text-align: right;
+
+            .treize-link {
+                text-decoration: none;
+                padding-right: 0;
+
+                &:hover {
+                    color: white;
+                    opacity: 80%;
+
+                    .last-word {
+                        &::after {
+                            transform: rotate(45deg);
+                        }
+                    }
+                }
+
+                .last-word {
+                    &:after {
+                        content: none;
+                    }
+                }
+
+                span {
+                    padding-right: 23px;
+                }
+            }
+        }
+    }
+
+    .menu--useful-links ul {
+        display: block;
+
+        li {
+            display: inline-flex;
+            margin-right: 10px;
+            align-items: center;
+
+            a {
+                font-size: 1.4rem;
+                padding-right: 0;
+
+                &:after {
+                    content: none;
+                }
+
+                &:hover {
+                    opacity: 80%;
+
+                    &:after {
+                        content: none;
+                    }
+                }
+            }
+
+            &:after {
+                padding-left: 10px;
+                content: "•";
+                color: $color-dot;
+            }
+
+            &:last-child {
+                &:after {
+                    content: none;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .theme-impacts footer,
+    .theme-process footer,
+    footer {
+        padding: 83px 0 40px 0;
+
+        .footer-content {
+            & > div {
+                padding-right: 100px;
+
+                &:first-child {
+                    margin-top: 86px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .footer-menu {
+                margin-top: 57px;
+            }
+        }
+
+        .footer-bottom {
+            .footer--bottom-col {
+                &:nth-child(1) {
+                    order: 2;
+                }
+
+                &:nth-child(2) {
+                    order: 1;
+                }
+
+                &:nth-child(3) {
+                    order: 3;
+                }
+            }
+
+            .credits,
+            .treize-link-container {
+                position: relative;
+                margin-top: 80px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .treize-link-container {
+                margin-top: 24px;
+            }
+        }
+
+        .menu--useful-links ul li {
+            display: block;
+
+            &:after {
+                content: none;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .theme-impacts footer,
+    .theme-process footer,
+    footer {
+        padding: 83px 0 40px 0;
+
+        .footer-content {
+            & > div {
+                padding-right: 30px;
+            }
+        }
+    }
+}

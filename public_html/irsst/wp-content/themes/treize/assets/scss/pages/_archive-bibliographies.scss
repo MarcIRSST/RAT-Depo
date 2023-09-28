@@ -1,0 +1,101 @@
+.bibliographies {
+    .archive__nav-item {
+        text-transform: none;
+        text-align: left;
+        width: 25%;
+        margin-right: 32px;
+        padding-bottom: 16px;
+    }
+}
+
+.bibliographies-card {
+    padding-top: 56px;
+
+    > .row {
+        align-items: flex-start;
+    }
+
+    &__title {
+        position: sticky;
+        position: -webkit-sticky;
+        top: calc(var(--sticky-top, 184px) + 76px);
+
+        h3 {
+            font-size: 1.6rem;
+
+            b {
+                font-weight: bold;
+            }
+        }
+    }
+
+    &__list {
+        li {
+            font-size: 1.9rem;
+            padding: 48px 72px 48px 0;
+            border-bottom: 1px solid $color-subtitle;
+
+            &:first-of-type {
+                padding-top: 0;
+            }
+
+            p {
+                word-break: break-word;
+
+                a {
+                    display: inline;
+                }
+            }
+
+            a {
+                text-decoration: none;
+                position: relative;
+                width: 100%;
+                display: block;
+                word-break: break-all;
+                margin-top: 32px;
+                text-decoration: underline;
+
+                .last-word:after {
+                    bottom: 5px;
+                    top: auto;
+                }
+            }
+
+            .source-link {
+                display: inline-block;
+                text-decoration: underline;
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-md) {
+    .bibliographies {
+        &__index {
+            margin-top: 72px;
+        }
+
+        .archive__nav-item {
+            width: 332px;
+            min-width: 332px;
+        }
+    }
+
+    .bibliographies-card {
+        &__title {
+            margin-bottom: 48px;
+            position: static;
+
+            h3 {
+                font-size: 2.4rem;
+            }
+
+            span {
+                display: block;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}

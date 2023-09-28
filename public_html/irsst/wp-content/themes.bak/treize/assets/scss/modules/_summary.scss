@@ -1,0 +1,13 @@
+.summary {
+    &__content + &__content {
+        margin-top: 176px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .summary {
+        h2 {
+            margin-bottom: $space-between-elements;
+        }
+    }
+}

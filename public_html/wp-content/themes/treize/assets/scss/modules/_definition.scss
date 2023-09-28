@@ -1,0 +1,25 @@
+.definition {
+    h2 {
+        margin-bottom: 56px;
+    }
+}
+
+.site__content {
+    .background-color {
+        background-color: $color-light-gray;
+        padding: 236px 0 200px 0;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .definition {
+        .subtitle {
+            margin-bottom: $space-between-elements-smaller;
+        }
+    }
+
+    .site__content .background-color {
+        padding: 150px 0 100px 0;
+    }
+}

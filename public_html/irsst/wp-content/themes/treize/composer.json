@@ -1,0 +1,9 @@
+{
+    "name": "treize/theme13",
+    "description": "Boilerplate theme for projects at TREIZE",
+    "type": "wordpress-theme",
+    "require-dev": {
+        "paulthewalton/acf-pro-stubs": "^5.8"
+    },
+    "require": {}
+}

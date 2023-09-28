@@ -1,0 +1,29 @@
+{
+    "name": "theme13",
+    "version": "1.0.0",
+    "description": "Wordpress Theme",
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@bitbucket.org/treizedev/theme13.git"
+    },
+    "author": "treize",
+    "license": "ISC",
+    "homepage": "https://bitbucket.org/treizedev/theme13#readme",
+    "scripts": {
+        "build-styles": "sass ./assets/scss/main-style.scss ./assets/css/main-style.css",
+        "watch-styles": "sass --watch ./assets/scss/main-style.scss ./assets/css/main-style.css",
+        "build-editor-styles": "sass ./assets/scss/editor-styles.scss ./assets/css/editor-styles.css",
+        "watch-editor-styles": "sass --watch ./assets/scss/editor-styles.scss ./assets/css/editor-styles.css"
+    },
+    "devDependencies": {
+        "eslint": "^7.25.0",
+        "eslint-config-prettier": "^8.3.0",
+        "eslint-config-standard": "^16.0.2",
+        "eslint-plugin-import": "^2.22.1",
+        "eslint-plugin-node": "^11.1.0",
+        "eslint-plugin-prettier": "^3.4.0",
+        "eslint-plugin-promise": "^4.3.1",
+        "prettier": "^2.2.1",
+        "sass": "^1.34.0"
+    }
+}

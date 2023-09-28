@@ -1,0 +1,332 @@
+.blog,
+.home-html,
+.post-type-archive,
+.archive-glossaries-html,
+.archive-bibliographies-html {
+    overflow-x: initial;
+    scroll-behavior: auto;
+}
+
+.blog,
+.post-type-archive {
+    background-color: $color-text;
+    color: $color-white;
+
+    header {
+        position: absolute;
+
+        &.nav-up {
+            transform: none;
+        }
+    }
+
+    .site__content {
+
+        h1,
+        .looks-h1,
+        h2,
+        .looks-h2,
+        h3,
+        .looks-h3,
+        h4,
+        .looks-h4,
+        h5,
+        .looks-h5,
+        h6,
+        .looks-h6 {
+            color: $color-white;
+        }
+
+        a:not(.glossaries__nav-item) {
+            color: $color-white;
+
+            &[target*="blank"] {
+                .last-word::after {
+                    content: url('../svg/ext-arrow-white.svg');
+                }
+            }
+        }
+    }
+}
+
+.archive-hero {
+    margin: 100px auto 42px !important;
+    padding-bottom: 42px;
+    padding-top: 42px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-color: $color-text;
+    z-index: 1;
+
+    &:after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        transform: translateY(100%);
+        height: 72px;
+        background: linear-gradient(180deg, $color-text 0%, rgba(0, 0, 0, 0) 100%);
+    }
+
+    .glossaries-counter {
+        font-size: 1.4rem;
+        position: relative;
+        top: -24px;
+        left: 16px;
+    }
+
+    .wysiwyg {
+        font-size: 2.4rem;
+
+        h2,
+        h3 {
+            @extend .subtitle;
+            color: $color-subtitle;
+        }
+
+        li,
+        p {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.archive {
+    &.wrapper {
+        margin-top: 0px !important;
+    }
+
+    &__search {
+        position: relative;
+        text-align: right;
+
+        &-container {
+            display: inline-block;
+            position: relative;
+            padding-left: 16px;
+        }
+
+        i {
+            position: absolute;
+            left: 0;
+            top: calc(50% + 2px);
+            transform: translateY(-50%);
+
+            svg {
+                display: block;
+            }
+
+            rect,
+            path,
+            g {
+                stroke: $color-white;
+            }
+        }
+
+        input {
+            background: transparent;
+            border: none;
+            padding: 8px 0 8px 16px;
+            color: $color-white;
+            font-size: 1.4rem;
+            transition: 0.24s ease;
+
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+
+    &__close {
+        text-align: right;
+
+        a {
+            text-decoration: none;
+            font-size: 1.6rem;
+
+            i {
+                margin-left: 8px;
+            }
+
+            svg,
+            g,
+            path {
+                stroke: $color-white;
+            }
+        }
+    }
+
+    &__nav {
+        overflow-x: auto;
+        position: sticky;
+        position: -webkit-sticky;
+        top: calc(var(--sticky-top, 20px) - 1px);
+        z-index: 1;
+        background-color: $color-text;
+
+        &-list {
+            border-bottom: 1px solid $color-subtitle;
+            display: flex;
+        }
+
+        + div {
+            margin-top: 48px;
+        }
+    }
+
+    &__nav-item {
+        flex-grow: 1;
+        position: relative;
+        top: 1px;
+        padding: 11px 0 7px;
+        font-size: 1.7rem;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        color: $color-subtitle;
+        border-bottom: 4px solid transparent;
+        transition: none;
+
+        &:hover {
+            color: $color-white;
+        }
+
+        &.in-viewport {
+            color: $color-white;
+            font-weight: 600;
+            letter-spacing: -0.3px;
+            border-color: $color-white;
+        }
+
+        &--empty {
+            opacity: 0.3;
+            pointer-events: none;
+        }
+    }
+
+    &__index {
+        > .row {
+            align-items: flex-start;
+        }
+
+        .letter {
+            position: sticky;
+            position: -webkit-sticky;
+            top: calc(var(--sticky-top, 184px) + 32px);
+        }
+    }
+
+    &-card {
+        &:target {
+            --offset: 224px;
+            padding-top: var(--offset) !important;
+            margin-top: calc(var(--offset) * -1);
+
+            > .row {
+                padding-top: 48px;
+            }
+        }
+    }
+
+    #archive-empty-message {
+        display: none;
+        text-align: center;
+        padding: 100px 0;
+
+        p,
+        a {
+            font-size: 1.6rem;
+        }
+    }
+}
+
+.archive-context {
+    margin: 100px auto !important;
+}
+
+@media screen and (max-width: $screen-lg) {
+    .archive-hero {
+        padding-bottom: 24px;
+
+        &:after {
+            content: none;
+        }
+
+        > .row {
+            margin: 0 -15px;
+        }
+
+        &__top {
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .wysiwyg {
+            padding: 0;
+            font-size: 1.9rem;
+
+            li,
+            p {
+                font-size: 1.9rem;
+            }
+        }
+    }
+
+    .archive {
+        &__nav {
+            margin-right: -48px;
+
+            &-wrapper {
+                min-width: var(--nav-min-width);
+                padding-right: 48px;
+            }
+        }
+
+        &__search {
+            margin-top: 24px;
+
+            &-container {
+                width: 100%;
+            }
+
+            input {
+                width: 100%;
+            }
+        }
+
+        &__index {
+            .letter {
+                position: static;
+            }
+
+            + .archive__index {
+                .letter {
+                    margin-top: 48px;
+                }
+            }
+        }
+    }
+
+    .archive-context {
+        margin-top: 48px !important;
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+    .archive-hero {
+        .glossaries-counter {
+            top: -14px;
+            left: 0;
+        }
+    }
+
+    .archive {
+        &__close {
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+    }
+}

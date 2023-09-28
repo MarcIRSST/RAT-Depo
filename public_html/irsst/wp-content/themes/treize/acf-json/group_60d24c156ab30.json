@@ -1,0 +1,549 @@
+{
+    "key": "group_60d24c156ab30",
+    "title": "Tableaux - Général",
+    "fields": [
+        {
+            "key": "field_60d24c171563a",
+            "label": "Tableau",
+            "name": "table",
+            "aria-label": "",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 2,
+            "layout": "block",
+            "sub_fields": [
+                {
+                    "key": "field_60d351c8dbf33",
+                    "label": "Montrer le titre",
+                    "name": "has_title",
+                    "aria-label": "",
+                    "type": "true_false",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "message": "",
+                    "default_value": 0,
+                    "ui_on_text": "Oui",
+                    "ui_off_text": "Non",
+                    "ui": 1
+                },
+                {
+                    "key": "field_60d24c291563b",
+                    "label": "Titre",
+                    "name": "table_title",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60d351c8dbf33",
+                                "operator": "==",
+                                "value": "1"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "tabs": "all",
+                    "media_upload": 1,
+                    "delay": 1,
+                    "toolbar": "full"
+                },
+                {
+                    "key": "field_60d351f7dbf34",
+                    "label": "Type de tableau",
+                    "name": "table_type",
+                    "aria-label": "",
+                    "type": "radio",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "choices": {
+                        "content": "De contenu",
+                        "data": "De données",
+                        "subject": "Imbriqués (sujets + rangées)",
+                        "horizontal": "Horizontal"
+                    },
+                    "default_value": "",
+                    "return_format": "value",
+                    "allow_null": 0,
+                    "other_choice": 0,
+                    "layout": "horizontal",
+                    "save_other_choice": 0
+                },
+                {
+                    "key": "field_60d379e4d7e9f",
+                    "label": "Tableau de contenu",
+                    "name": "table_type_content",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60d351f7dbf34",
+                                "operator": "==",
+                                "value": "content"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60d37a0fd7ea0",
+                            "label": "Gestionnaire de tableau",
+                            "name": "table_manager",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "clone": [
+                                "group_60d35d12a7a47"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_60d37ea0343e6",
+                    "label": "Tableau de données",
+                    "name": "table_type_data",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60d351f7dbf34",
+                                "operator": "==",
+                                "value": "data"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60d37ea0343e7",
+                            "label": "Gestionnaire de tableau",
+                            "name": "table_manager",
+                            "aria-label": "",
+                            "type": "clone",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "clone": [
+                                "group_60d35d12a7a47"
+                            ],
+                            "display": "seamless",
+                            "layout": "block",
+                            "prefix_label": 0,
+                            "prefix_name": 0
+                        }
+                    ]
+                },
+                {
+                    "key": "field_60d37ec7343e8",
+                    "label": "Tableau imbriqués",
+                    "name": "table_type_subject",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60d351f7dbf34",
+                                "operator": "==",
+                                "value": "subject"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_61436a380005c",
+                            "label": "Montré la colonne de sujet",
+                            "name": "has_subject",
+                            "aria-label": "",
+                            "type": "true_false",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "message": "",
+                            "default_value": 0,
+                            "ui_on_text": "Oui",
+                            "ui_off_text": "Non",
+                            "ui": 1
+                        },
+                        {
+                            "key": "field_60d37ee3343ea",
+                            "label": "Entête de la colonne sujet",
+                            "name": "subject_header",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_60d37f05343eb",
+                            "label": "Sujets",
+                            "name": "subjects",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "layout": "block",
+                            "pagination": 0,
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Ajouter un sujet",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_60d37f27343ec",
+                                    "label": "Contenu du sujet",
+                                    "name": "subject_content",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "wpml_cf_preferences": 2,
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "toolbar": "full",
+                                    "parent_repeater": "field_60d37f05343eb"
+                                },
+                                {
+                                    "key": "field_60d37f35343ed",
+                                    "label": "Gestionnaire de tableau",
+                                    "name": "table_manager",
+                                    "aria-label": "",
+                                    "type": "clone",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "wpml_cf_preferences": 2,
+                                    "clone": [
+                                        "group_60d35d12a7a47"
+                                    ],
+                                    "display": "seamless",
+                                    "layout": "block",
+                                    "prefix_label": 0,
+                                    "prefix_name": 0,
+                                    "parent_repeater": "field_60d37f05343eb"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_60d381c990032",
+                    "label": "Tableau horizontal",
+                    "name": "table_type_horizontal",
+                    "aria-label": "",
+                    "type": "group",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": [
+                        [
+                            {
+                                "field": "field_60d351f7dbf34",
+                                "operator": "==",
+                                "value": "horizontal"
+                            }
+                        ]
+                    ],
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "layout": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_60d381e690033",
+                            "label": "Sections",
+                            "name": "sections",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "layout": "block",
+                            "pagination": 0,
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Ajouter une section",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_60d381f590034",
+                                    "label": "Titre",
+                                    "name": "section_title",
+                                    "aria-label": "",
+                                    "type": "wysiwyg",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "wpml_cf_preferences": 2,
+                                    "default_value": "",
+                                    "tabs": "all",
+                                    "media_upload": 1,
+                                    "delay": 0,
+                                    "toolbar": "full",
+                                    "parent_repeater": "field_60d381e690033"
+                                },
+                                {
+                                    "key": "field_60d3820590035",
+                                    "label": "Rangées",
+                                    "name": "section_rows",
+                                    "aria-label": "",
+                                    "type": "repeater",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "wpml_cf_preferences": 2,
+                                    "layout": "block",
+                                    "min": 0,
+                                    "max": 0,
+                                    "collapsed": "",
+                                    "button_label": "Ajouter une rangée",
+                                    "rows_per_page": 20,
+                                    "sub_fields": [
+                                        {
+                                            "key": "field_60d388996aeef",
+                                            "label": "Avec fond gris",
+                                            "name": "with_background",
+                                            "aria-label": "",
+                                            "type": "true_false",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "wpml_cf_preferences": 2,
+                                            "message": "",
+                                            "default_value": 0,
+                                            "ui_on_text": "Oui",
+                                            "ui_off_text": "Non",
+                                            "ui": 1,
+                                            "parent_repeater": "field_60d3820590035"
+                                        },
+                                        {
+                                            "key": "field_60d3821b90036",
+                                            "label": "Contenu",
+                                            "name": "section_rows_content",
+                                            "aria-label": "",
+                                            "type": "wysiwyg",
+                                            "instructions": "",
+                                            "required": 0,
+                                            "conditional_logic": 0,
+                                            "wrapper": {
+                                                "width": "",
+                                                "class": "",
+                                                "id": ""
+                                            },
+                                            "wpml_cf_preferences": 2,
+                                            "default_value": "",
+                                            "tabs": "all",
+                                            "media_upload": 1,
+                                            "delay": 0,
+                                            "toolbar": "full",
+                                            "parent_repeater": "field_60d3820590035"
+                                        }
+                                    ],
+                                    "parent_repeater": "field_60d381e690033"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "key": "field_60d3832cd22eb",
+                    "label": "Note en pied de tableau",
+                    "name": "table_footnote",
+                    "aria-label": "",
+                    "type": "wysiwyg",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "tabs": "all",
+                    "media_upload": 1,
+                    "delay": 0,
+                    "toolbar": "full"
+                },
+                {
+                    "key": "field_60d24c411563c",
+                    "label": "Ancre",
+                    "name": "anchor",
+                    "aria-label": "",
+                    "type": "clone",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "clone": [
+                        "group_60afa3f6c5fb3"
+                    ],
+                    "display": "seamless",
+                    "layout": "block",
+                    "prefix_label": 0,
+                    "prefix_name": 0
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "tables"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1674597022
+}

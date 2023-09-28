@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52.403" height="52.402" viewBox="0 0 52.403 52.402">
+    <defs>
+        <style>.bsi{fill:none;stroke:#121212;stroke-width:3px;}</style>
+    </defs>
+    <g transform="translate(2.121 2.121)">
+        <rect class="bsi" width="34.055" height="34.055" rx="17" transform="translate(0 24.08) rotate(-45)"/>
+        <path class="bsi" d="M0,17.027V0" transform="translate(36.041 36.043) rotate(-45)"/>
+    </g>
+</svg>

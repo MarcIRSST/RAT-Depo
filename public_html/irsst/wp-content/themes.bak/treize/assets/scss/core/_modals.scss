@@ -1,0 +1,112 @@
+.blog,
+.page-template-template-support,
+.page-template-template-purpose,
+.post-type-archive {
+    .modal {
+        background-color: $color-text;
+        color: $color-white;
+
+        &__close {
+            color: $color-white;
+
+            i {
+                .ci {
+                    stroke: $color-white;
+                }
+            }
+        }
+    }
+}
+
+.blog,
+.post-type-archive {
+    .modal {
+        background-color: $color-text;
+    }
+}
+
+.page-template-template-support,
+.page-template-template-purpose {
+    .modal {
+        background-color: $color-title;
+    }
+}
+
+.modal {
+    max-width: 100vw;
+    position: fixed;
+    z-index: 10;
+    top: var(--header-h, 0);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: $color-white;
+    color: $color-text;
+    display: flex;
+    transform: translateY(calc(-100% - var(--header-h, 0)));
+    opacity: 0;
+    transition: transform 0.48s ease, opacity 0.48s ease;
+
+    &.visible {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    &__content {
+        position: relative;
+        max-width: $wrapper-width;
+        margin: 0 auto;
+        padding: 0 64px;
+    }
+
+    &__close {
+        position: absolute;
+        right: 64px;
+        top: -24px;
+        transform: translateY(-100%) scale(0.9);
+        text-decoration: none;
+        font-size: 1.8rem;
+
+        i {
+            margin-left: 12px;
+
+            .ci {
+                stroke: $color-text;
+            }
+        }
+    }
+}
+
+.modal--search {
+    align-items: center;
+
+    .modal__content {
+        margin-bottom: 100px;
+        max-width: 1440px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: $screen-lg) {
+    .modal {
+        &__content {
+            padding: 32px;
+        }
+
+        &__close {
+            right: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+    .modal {
+        &__content {
+            padding: 24px;
+        }
+
+        &__close {
+            right: 24px;
+        }
+    }
+}

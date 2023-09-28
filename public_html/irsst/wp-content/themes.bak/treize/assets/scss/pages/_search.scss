@@ -1,0 +1,114 @@
+.hero--search {
+    h1 {
+        color: $color-title;
+    }
+}
+
+.search-results {
+    .back-button {
+        text-decoration: none;
+
+        i {
+            margin-left: 12px;
+
+            .ci {
+                stroke: $color-title
+            }
+        }
+    }
+
+    &__term {
+        margin-bottom: 24px;
+
+        h1 {
+            padding-left: 0;
+        }
+    }
+
+    &__close {
+        text-align: right;
+        font-size: 1.6rem;
+        padding-right: 0;
+    }
+
+    &__total {
+        color: $color-subtitle;
+        font-size: 2.4rem;
+
+        span {
+            color: $color-text;
+            display: inline-block;
+            margin-right: 4px;
+        }
+
+        > div {
+            padding-left: 0;
+        }
+    }
+
+    &__table {
+        width: 100%;
+
+        th {
+            padding-bottom: 24px;
+            text-align: left;
+            font-size: 1.4rem !important;
+            color: $color-subtitle;
+            border-bottom: 1px solid $color-subtitle;
+        }
+
+        tbody tr {
+            cursor: pointer;
+
+            &:hover {
+                .action {
+                    svg {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+
+        td {
+            padding: 32px 0;
+            border-bottom: 1px solid $color-text;
+        }
+
+        .term {
+            width: 60%;
+            padding-right: 42px;
+            font-size: 1.9rem;
+        }
+
+        .place {
+            width: 40%;
+            color: $color-subtitle;
+            font-size: 1.6rem;
+        }
+
+        .action {
+            text-align: right;
+
+            svg {
+                position: relative;
+                top: 6px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $screen-lg) {
+    .search-results {
+        &__total {
+            font-size: 1.8rem;
+        }
+    }
+}
+
+@media screen and (max-width: $screen-sm) {
+    .search-results {
+        &__close {
+            margin-bottom: 16px;
+        }
+    }
+}

@@ -1,0 +1,492 @@
+body {
+    font-family: $main-font;
+    font-size: 2.4rem;
+    line-height: 1.333;
+    color: $color-text;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.looks-h1,
+.looks-h2,
+.looks-h3,
+.looks-h4,
+.looks-h5,
+.looks-h6,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.looks-h1,
+.looks-h2,
+.looks-h3,
+.looks-h4,
+.looks-h5,
+.looks-h6,
+ol,
+a {
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+h1,
+.looks-h1 {
+    font-size: 9.6rem;
+    font-weight: 300;
+    line-height: 1;
+}
+
+h2,
+.looks-h2 {
+    font-size: 7.2rem;
+    font-weight: 300;
+    line-height: 1.111;
+}
+
+h3,
+.looks-h3 {
+    font-size: 5.2rem;
+    font-weight: 300;
+    line-height: 1.125;
+}
+
+h4,
+.looks-h4 {
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 1.25;
+}
+
+h5,
+.looks-h5 {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+h1,
+.looks-h1,
+h2,
+.looks-h2,
+h3,
+.looks-h3,
+h4,
+.looks-h4,
+h5,
+.looks-h5 {
+    color: $color-title;
+    word-break: keep-all;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+}
+
+.title-paragraph {
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: $color-title;
+}
+
+.big-text {
+    font-size: 3rem;
+    font-weight: 500;
+    line-height: 1.333;
+}
+
+.medium-text {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+.small-text {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.684;
+}
+
+.xs-text {
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.subtitle,
+h6 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    line-height: 1.4117;
+    color: $color-subtitle;
+    margin-bottom: 24px;
+}
+
+.text-header {
+    font-size: 1.9rem;
+    font-weight: 500;
+    line-height: 1.684;
+}
+
+blockquote {
+    p {
+        font-size: 4.2rem;
+        font-weight: 500;
+        line-height: 1.333;
+        color: var(--theme-color, $color-text);
+    }
+}
+
+.figure-right {
+    margin: 24px 0 24px 24px;
+}
+
+.figure-left {
+    margin: 24px 24px 24px 0;
+}
+
+.figure-right + p,
+p + blockquote,
+blockquote + p,
+p + p {
+    margin-top: $space-between-elements;
+}
+
+.wysiwyg {
+    p:empty {
+        display: none;
+    }
+
+    b,
+    strong {
+        font-weight: 700;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    ul li {
+        list-style-type: disc;
+    }
+
+    ul,
+    ol {
+        padding: 40px 0;
+        margin-left: 30px;
+    }
+
+    ul ul li {
+        list-style: circle;
+    }
+
+    li + li {
+        margin-top: 16px;
+    }
+
+    ol {
+        counter-reset: section;
+
+        li {
+            list-style: decimal;
+            padding-left: 14px;
+
+            &::marker {
+                margin-right: 14px;
+                color: $color-text;
+            }
+        }
+    }
+
+    li a {
+        display: initial;
+    }
+
+    a,
+    .cta--secondary,
+    .cta--external,
+    .cta--main {
+        transition: all 0.24s;
+    }
+
+    h2,
+    h3,
+    h4,
+    h5 {
+
+        + h4,
+        + p,
+        + blockquote,
+        + p,
+        + blockquote,
+        + p,
+        + blockquote {
+            margin-top: 52px;
+        }
+    }
+
+    p + h2,
+    p + h3,
+    p + h4 {
+        margin-top: 140px;
+    }
+
+    a:hover {
+        color: var(--theme-color, $color-title);
+
+        .theme-neutral & {
+            color: $color-text-lighter;
+        }
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+.bordered-content {
+    border: 4px solid $color-text;
+    padding: 24px;
+    margin: $space-between-elements 0;
+
+    *:first-child {
+        margin-top: 0 !important
+    }
+
+    blockquote {
+        margin-left: 0 !important;
+    }
+}
+
+.ellipsis {
+    color: $color-subtitle;
+    font-size: 1em;
+    width: 0;
+    opacity: 1;
+    transition: opacity 0.24s ease-in-out;
+}
+
+.ellipsis-text {
+    max-width: 0;
+    display: inline-block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    transition: max-width 0.24s ease-in-out;
+}
+
+g,
+svg,
+path {
+    transition: 0.24s ease-in-out;
+}
+
+.text-impacts {
+    color: $color-impacts;
+
+    g,
+    svg,
+    path {
+        stroke: $color-impacts;
+    }
+}
+
+.text-process {
+    color: $color-process;
+
+    g,
+    svg,
+    path {
+        stroke: $color-process;
+    }
+}
+
+.glossaries-counter {
+    vertical-align: super;
+    font-size: 0.75em;
+    margin-left: 4px;
+    color: $color-gray;
+}
+
+@media only screen and (max-width: 1440px) {
+
+    h1,
+    .looks-h1 {
+        font-size: 9rem;
+    }
+
+    h2,
+    .looks-h2 {
+        font-size: 6.4rem;
+    }
+
+    h3,
+    .looks-h3 {
+        font-size: 5rem;
+    }
+
+    blockquote {
+        p {
+            font-size: 4.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    h1,
+    .looks-h1,
+    h2,
+    .looks-h2,
+    h3,
+    .looks-h3,
+    h4,
+    .looks-h4,
+    h5,
+    .looks-h5,
+    h6,
+    .looks-h6 {
+        br {
+            content: "";
+
+            &:after {
+                content: " "
+            }
+        }
+    }
+
+    h1,
+    .looks-h1 {
+        font-size: 8.2rem;
+    }
+
+    h2,
+    .looks-h2 {
+        font-size: 5.6rem;
+    }
+
+    h3,
+    .looks-h3 {
+        font-size: 4.8rem;
+    }
+
+    h4,
+    .looks-h4 {
+        font-size: 3rem;
+    }
+
+    blockquote {
+        p {
+            font-size: 4rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    h1,
+    .looks-h1 {
+        font-size: 6.7rem;
+        line-height: 1.1;
+    }
+
+    h2,
+    .looks-h2 {
+        font-size: 4.8rem;
+        line-height: 1.13;
+    }
+
+    h3,
+    .looks-h3 {
+        font-size: 4.6rem;
+    }
+
+    blockquote {
+        p {
+            font-size: 3.8rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    body {
+        font-size: 2rem;
+    }
+
+    h1,
+    .looks-h1 {
+        font-size: 5.2rem;
+        line-height: 1.08;
+    }
+
+    h2,
+    .looks-h2 {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
+    h3,
+    .looks-h3 {
+        font-size: 4rem;
+        line-height: 1.2;
+    }
+
+    h4,
+    .looks-h4 {
+        font-size: 2.8rem;
+        line-height: 1.25;
+    }
+
+    .title-paragraph {
+        font-size: 1.8rem;
+    }
+
+    .big-text {
+        font-size: 2.4rem;
+    }
+
+    .small-text {
+        font-size: 1.8rem;
+    }
+
+    .text-header {
+        font-size: 1.7rem;
+    }
+
+    blockquote {
+        p {
+            font-size: 3.5rem;
+            line-height: 1.3714;
+        }
+    }
+
+    .figure-left + p,
+    .figure-right + p,
+    blockquote + p,
+    p + p {
+        margin-top: 3rem;
+    }
+
+    .figure-right,
+    .figure-left {
+        float: none !important;
+        text-align: center;
+        max-width: none !important;
+    }
+}
